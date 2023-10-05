@@ -21,15 +21,15 @@ jobs:
 
     - name: Compile the application
       run: |
-        ./random_numbers/mvnw clean compile
+        ./mvnw clean compile
     
     - name: Test the application
       run: |
-        ./random_numbers/mvnw test
+        ./mvnw test
     
     - name: Build the application
       run: |
-        ./random_numbers/mvnw package
+        ./mvnw package
 
     - name: Login to Docker Hub
       run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
