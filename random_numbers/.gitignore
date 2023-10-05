@@ -1,3 +1,14 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### VS Code ###
+.vscode/
+
+### Java ###
+
 # Compiled class file
 *.class
 
@@ -12,6 +23,7 @@
 
 # Package Files #
 *.jar
+*.properties
 *.war
 *.nar
 *.ear
@@ -22,3 +34,5 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+target/
