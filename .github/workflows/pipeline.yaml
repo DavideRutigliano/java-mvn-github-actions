@@ -19,6 +19,10 @@ jobs:
         distribution: 'temurin'
         java-version: '11'
 
+    - name: Maven wrapper
+      run: |
+        mvn wrapper:wrapper
+
     - name: Compile the application
       run: |
         ./mvnw clean compile
