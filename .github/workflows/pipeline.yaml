@@ -45,6 +45,6 @@ jobs:
 
     - name: Push Docker image
       run: |
-        docker push ${{ secrets.DOCKER_USERNAME }}/${{ github.repository_name }}:${{ github.sha }}
-        docker push ${{ secrets.DOCKER_USERNAME }}/${{ github.repository_name }}:latest
+        docker push ${{ secrets.DOCKER_USERNAME }}/random-numbers:${{ github.sha }}
+        docker push ${{ secrets.DOCKER_USERNAME }}/random-numbers:latest
 
